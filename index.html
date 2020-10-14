@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>APIs with PHP cURL using AJAX calls</title>
+        <meta name="author" content="Peter Kertesz">
+        <meta name="description" content="API calls with AJAX using PHP cURL">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="favicon.ico" rel="icon">
+        <link rel="stylesheet" href="css/preloader.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+
+        <header>
+
+        </header>
+
+        <main>
+            <article>
+                <div>API name</div>
+                <div>API description</div>
+            </article>
+
+            <article>
+                <div>Postal Codes</div>
+                <div>Returns a list of postal codes and places for the postalcode query</div>
+                <div>
+                    <input type="number" id="postalCode" placeholder="Postal Code">
+                    <input type="number" id="maxRows" placeholder="Max rows">
+                    <button id="btn-postal-codes">Submit</button>
+                </div>
+            </article>
+
+            <article>
+                <div>Weather Stations</div>
+                <div>Returns a list of weather stations with the most recent weather observation</div>
+                <div>
+                    <input type="number" id="north" placeholder="North">
+                    <input type="number" id="south" placeholder="South">
+                    <input type="number" id="east" placeholder="East">
+                    <input type="number" id="west" placeholder="West">
+                    <button id="btn-weather-observations">Submit</button>
+                </div>
+            </article>
+
+            <article>
+                <div>Oceans</div>
+                <div>Returns the name of an ocean or a sea</div>
+                <div>
+                    <input type="number" id="lat" placeholder="Latitude">
+                    <input type="number" id="lng" placeholder="Longitude">
+                    <button id="btn-oceans">Submit</button>
+                </div>
+            </article>
+        </main>
+
+        <footer>
+            <div id="output-postal-codes"></div>
+            <div id="output-weather-observations"></div>
+            <div id="output-oceans"></div>
+        </footer>
+
+        <div id="preloader"></div>
+        
+        <script src="vendors/jquery-2.2.3.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
